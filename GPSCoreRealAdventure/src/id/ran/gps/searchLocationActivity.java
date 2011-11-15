@@ -33,7 +33,7 @@ public class searchLocationActivity extends MapActivity implements LocationListe
 	MapController	mc				= null;	
 	Drawable		defaultMarker	= null;	
 	GeoPoint		p				= null;	
-	double			latitude		= 42.43887898798;
+	double			latitude		= 42.4388789;
 	double			longitude 		= -71.119277;
 	double			altitude		= 0;
 	
