@@ -13,7 +13,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:orientation="vertical" >
     </LinearLayout>
     
@@ -113,21 +113,6 @@
         android:orientation="vertical" >
     </LinearLayout>
     
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:gravity="center"        
-        android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/prefmain"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Preference"
-            android:textColor="@color/main_c1"
-            android:textSize="15dp" />
-
-    </LinearLayout>
 
 </LinearLayout>

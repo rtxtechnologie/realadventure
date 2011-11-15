@@ -18,24 +18,23 @@ public final class R {
         public static final int nista_logo=0x7f020001;
     }
     public static final class id {
-        public static final int Button01=0x7f07000b;
-        public static final int ImageView01=0x7f070008;
-        public static final int ScrollView01=0x7f070009;
-        public static final int TextView01=0x7f07000a;
-        public static final int bmain1=0x7f070001;
-        public static final int bmain2=0x7f070002;
-        public static final int bmain3=0x7f070003;
-        public static final int bmain4=0x7f070004;
-        public static final int bmain5=0x7f070005;
-        public static final int bmain6=0x7f070006;
-        public static final int button1=0x7f07000c;
-        public static final int item1=0x7f070011;
-        public static final int prefmain=0x7f070007;
-        public static final int sa1=0x7f07000d;
-        public static final int sa2=0x7f07000e;
-        public static final int sa3=0x7f07000f;
-        public static final int sa4=0x7f070010;
-        public static final int textView1=0x7f070000;
+        public static final int Button01=0x7f08000a;
+        public static final int ImageView01=0x7f080007;
+        public static final int ScrollView01=0x7f080008;
+        public static final int TextView01=0x7f080009;
+        public static final int bmain1=0x7f080001;
+        public static final int bmain2=0x7f080002;
+        public static final int bmain3=0x7f080003;
+        public static final int bmain4=0x7f080004;
+        public static final int bmain5=0x7f080005;
+        public static final int bmain6=0x7f080006;
+        public static final int button1=0x7f08000b;
+        public static final int item1=0x7f080010;
+        public static final int sa1=0x7f08000c;
+        public static final int sa2=0x7f08000d;
+        public static final int sa3=0x7f08000e;
+        public static final int sa4=0x7f08000f;
+        public static final int textView1=0x7f080000;
     }
     public static final class layout {
         public static final int configadventure=0x7f030000;
@@ -53,11 +52,14 @@ public final class R {
         public static final int viewrecordview=0x7f03000c;
     }
     public static final class menu {
-        public static final int preference=0x7f060000;
+        public static final int preference=0x7f070000;
     }
     public static final class string {
         public static final int app_name=0x7f040001;
         public static final int hello=0x7f040000;
         public static final int lots_of_text=0x7f040002;
+    }
+    public static final class style {
+        public static final int t1=0x7f060000;
     }
 }
