@@ -36,7 +36,8 @@
                 android:id="@+id/sa1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Record New Route" />
+                android:text="Record New Route"
+                android:onClick="myClickHandler" />
         </TableRow>
 
         <TableRow
@@ -48,7 +49,8 @@
                 android:id="@+id/sa2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Route View" />
+                android:text="Route View"
+                android:onClick="myClickHandler" />
         </TableRow>
 
         <TableRow
@@ -60,7 +62,8 @@
                 android:id="@+id/sa3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Route View and Record Route" />
+                android:text="Route View and Record Route"
+                android:onClick="myClickHandler" />
         </TableRow>
 
         <TableRow
@@ -72,7 +75,8 @@
                 android:id="@+id/sa4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Configuration" />
+                android:text="Configuration"
+                android:onClick="myClickHandler" />
         </TableRow>   
     </TableLayout>
     

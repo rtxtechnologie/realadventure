@@ -13,12 +13,16 @@
             </intent-filter>
         </activity>
         <activity android:name="StartAdventure"></activity>
+        <activity android:name="Maps"></activity>
+        <activity android:name="InvKit"></activity>
+        <activity android:name="EmgTool"></activity>
+        <activity android:name="NavTool"></activity>
+        <activity android:name="History"></activity>
         
-        <activity android:name="id.rtx.realadventure.screen.ConfigAdventure" android:exported="true"></activity>
-         
-        <activity android:name="id.rtx.realadventure.screen.RecordRoute" android:exported="true"></activity>
-        <activity android:name="id.rtx.realadventure.screen.RouteView" android:exported="true"></activity>
-        <activity android:name="id.rtx.realadventure.screen.sa.ViewRecordRoute" android:exported="true"></activity>
+        <activity android:name="ConfigAdventure" android:exported="true"></activity>         
+        <activity android:name="RecordRoute" android:exported="true"></activity>
+        <activity android:name="RouteView" android:exported="true"></activity>
+        <activity android:name="ViewRecordRoute" android:exported="true"></activity>
     </application>
 
 </manifest>
