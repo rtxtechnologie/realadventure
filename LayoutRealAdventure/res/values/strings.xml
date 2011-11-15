@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ScreenActivity!</string>
+    <string name="app_name">Screen</string>
+    <string name="lots_of_text">assadfsadfsadfsagdshfhjgjk</string>
+    <drawable name="nista_logo">#111</drawable>
+    <color name="main_c1">#123</color>
+
+</resources>
