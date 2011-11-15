@@ -13,16 +13,25 @@ public class StartAdventure extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.startadventure);
         
-        Button mainNext = (Button) findViewById(R.id.sa4);
-        
-        mainNext.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                Intent a = new Intent();                
-                a.setClassName(v.getContext(), "id.rtx.realadventure.screen.ConfigAdventure");
-                startActivity(a);
-            }
-        });
-        
+	}
+	
+    public void myClickHandler(View v) {
+    	Intent a = new Intent(); 
+		switch (v.getId()) {
+		case R.id.sa1:   a.setClassName(v.getContext(), "id.rtx.realadventure.screen.RecordRoute");
+        					startActivity(a);
+							break;
+		case R.id.sa2:	a.setClassName(v.getContext(), "id.rtx.realadventure.screen.RouteView");
+							startActivity(a);
+							break;
+		case R.id.sa3:	a.setClassName(v.getContext(), "id.rtx.realadventure.screen.ViewRecordRoute");
+							startActivity(a);
+							break;
+		case R.id.sa4:	a.setClassName(v.getContext(), "id.rtx.realadventure.screen.ConfigAdventure");
+							startActivity(a);
+							break;
+
+		}
 	}
 
 }

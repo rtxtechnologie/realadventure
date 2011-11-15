@@ -20,16 +20,29 @@ public class Main extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        
-        
-        Button mainNext = (Button) findViewById(R.id.bmain1);
-        
-        mainNext.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                Intent i = new Intent();                
-                i.setClassName(v.getContext(), "id.rtx.realadventure.screen.StartAdventure");
-                startActivity(i);
-            }
-        });
+
     }
+    public void myClickHandler(View v) {
+    	Intent a = new Intent(); 
+		switch (v.getId()) {
+		case R.id.bmain1:   a.setClassName(v.getContext(), "id.rtx.realadventure.screen.StarAdventure");
+        					startActivity(a);
+							break;
+		case R.id.bmain2:	a.setClassName(v.getContext(), "id.rtx.realadventure.screen.Maps");
+							startActivity(a);
+							break;
+		case R.id.bmain3:	a.setClassName(v.getContext(), "id.rtx.realadventure.screen.NavTool");
+							startActivity(a);
+							break;
+		case R.id.bmain4:	a.setClassName(v.getContext(), "id.rtx.realadventure.screen.InvKit");
+							startActivity(a);
+							break;
+		case R.id.bmain5:	a.setClassName(v.getContext(), "id.rtx.realadventure.screen.EmgTool");
+							startActivity(a);
+							break;
+		case R.id.bmain6:	a.setClassName(v.getContext(), "id.rtx.realadventure.screen.History");
+							startActivity(a);
+							break;
+		}
+	}
 }
