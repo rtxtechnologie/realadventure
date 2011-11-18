@@ -25,8 +25,9 @@ public class Main extends Activity {
 	        this.dh.deleteAll();
 	        this.dh.insert("t1");
 	        this.dh.insert("t2");
-	        this.dh.insert("t3");        
-	        List<String> names = this.dh.selectAll();
+	        this.dh.insert("t3");
+	        String n[] ={"name"};
+	        List<String> names = this.dh.selectAll("table1", n, "id = 1 or id = 2", "name asc");
 	        StringBuilder sb = new StringBuilder();
 	        for (String name : names) {
 	           sb.append(name + "\n");

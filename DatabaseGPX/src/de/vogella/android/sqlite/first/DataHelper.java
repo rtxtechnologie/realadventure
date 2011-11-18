@@ -39,10 +39,10 @@ public class DataHelper {
       this.db.delete(TABLE_NAME, null, null);
    }
  
-   public List<String> selectAll() {
+   public List<String> selectAll(String t,String[] c,String w, String ob) {
       List<String> list = new ArrayList<String>();
-      Cursor cursor = this.db.query(TABLE_NAME, new String[] { "name" }, 
-        null, null, null, null, "name asc");
+      Cursor cursor = this.db.query(t, c, w, null, null, null, ob);
+     // Cursor cursor = this.db.query(TABLE_NAME, new String[] { "name" },null, null, null, null, "name asc");
       if (cursor.moveToFirst()) {
          do {
             list.add(cursor.getString(0)); 
