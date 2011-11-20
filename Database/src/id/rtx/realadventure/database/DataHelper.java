@@ -1,5 +1,6 @@
-package de.vogella.android.sqlite.first;
- 
+package id.rtx.realadventure.database;
+
+
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -18,6 +19,7 @@ public class DataHelper {
  
    private Context context;
    private SQLiteDatabase db;
+   
  
    private SQLiteStatement insertStmt;
    //private static final String INSERT = "insert into " + TABLE_NAME + "(name) values (?)";
@@ -30,13 +32,14 @@ public class DataHelper {
    }
  
    public long insert(String name) {
-	  this.insertStmt = this.db.compileStatement("insert into " + TABLE_NAME + "(tes) values (?)"); 
-      this.insertStmt.bindString(1, name);
+	  this.insertStmt = this.db.compileStatement("insert into T_GPX (BOUNDS_MINLAT,ID_GPX) values (?,?)"); 
+      this.insertStmt.bindString(1, "bounds");
+      this.insertStmt.bindString(2, name);
       return this.insertStmt.executeInsert();
    }
  
    public void deleteAll() {
-      this.db.delete(TABLE_NAME, null, null);
+      this.db.delete("T_GPX", null, null);
    }
  
    public List<String> selectAll(String t,String[] c,String w, String ob, int ids) {
@@ -62,7 +65,13 @@ public class DataHelper {
  
       @Override
       public void onCreate(SQLiteDatabase db) {
-         db.execSQL("CREATE TABLE " + TABLE_NAME + " (id INTEGER PRIMARY KEY, tes TEXT)");
+         db.execSQL("CREATE TABLE T_GPX (ID_GPX TEXT PRIMARY KEY, BOUNDS_MINLAT TEXT, BOUNDS_MINLOT TEXT, BOUNDS_MAXLAT TEXT, BOUNDS_MAXLON TEXT, META_NAME TEXT, META_DESC, META_AUTHOR TEXT, META_COPYRIGHT TEXT, META_TIME TEXT)");
+         
+         db.execSQL("CREATE TABLE T_GPX_WAYPOINT (ID_GPX TEXT, LAT TEXT, LON TEXT, ELE TEXT, TIME TEXT, NAME TEXT, DESC TEXT, SIM TEXT, TYPE TEXT)");
+         db.execSQL("CREATE TABLE T_GPX_TRACK (ID_GPX TEXT, ID_TRACK INT PRIMARY KEY, H_NAME TEXT, H_NUMBER TEXT, H_TYPE TEXT)");
+         db.execSQL("CREATE TABLE T_GPX_ROUTE (ID_GPX TEXT, ID_ROUTE INT PRIMARY KEY, H_NAME TEXT, H_NUMBER TEXT, H_TYPE TEXT)");
+         db.execSQL("CREATE TABLE T_GPX_TRACK_CHILD (ID_TRACK INT, C_LAT INT, C_LON TEXT, C_ELE TEXT, C_TIME TEXT, C_SYM TEXT)");
+         db.execSQL("CREATE TABLE T_GPX_ROUTE_CHILD (ID_ROUTE INT, C_LAT INT, C_LON TEXT, C_ELE TEXT, C_TIME TEXT, C_NAME TEXT, C_DESC TEXT, C_SYM TEXT, C_TYPE TEXT)");
       }
  
       @Override
@@ -73,3 +82,4 @@ public class DataHelper {
       }
    }
 }
+
