@@ -1,6 +1,5 @@
 package id.rtx.realadventure.database;
 
-import id.rtx.realadventure.database.DataHelper;
 import id.rtx.realadventure.database.object.T_GPX;
 import id.rtx.realadventure.database.object.T_GPX_ROUTE;
 import id.rtx.realadventure.database.object.T_GPX_ROUTE_CHILD;
@@ -11,17 +10,13 @@ import id.rtx.realadventure.database.object.T_GPX_WAYPOINT;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 
 public class CRUDatabase {
-	   private static final String DATABASE_NAME = "example.db";
-	   private static final int DATABASE_VERSION = 1;
-	   private static final String TABLE_NAME = "table1";
+	   
 	
 	   private Context context;
 	   private SQLiteDatabase db;

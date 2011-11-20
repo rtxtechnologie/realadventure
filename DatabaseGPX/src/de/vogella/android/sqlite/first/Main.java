@@ -2,7 +2,6 @@ package de.vogella.android.sqlite.first;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.TextView;
  
 import java.util.List;
