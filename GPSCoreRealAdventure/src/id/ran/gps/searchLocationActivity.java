@@ -98,7 +98,7 @@ public class searchLocationActivity extends MapActivity implements LocationListe
 		// Getting locationManager and reflecting changes over map if distance travel by
 		// user is greater than 500m from current location.
 		LocationManager lm = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-		lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 2000, 5, this);
+		lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 30000, 20, this);
 	}
 	
 	/* This method is called when use position will get changed */
@@ -145,6 +145,7 @@ public class searchLocationActivity extends MapActivity implements LocationListe
 	@Override
 	public void onBackPressed() {
 		Log.d("KEYCODE", "Apps exit... bye");
+		System.exit(0);
 		finish();
 		return;
 	}

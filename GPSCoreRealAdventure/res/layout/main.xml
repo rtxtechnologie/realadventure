@@ -18,9 +18,9 @@
     android:layout_height="fill_parent"
     android:enabled="true"
  	android:clickable="true"
-    android:apiKey="0EP3coxVYPLN5UwZdPsDa0lQBQ3dMwFcvgzleQg"
+    android:apiKey="0EP3coxVYPLPx5oF8rE_nmx4ZggvVjWpjCX-TKw"
     />
 </LinearLayout>
 
-<!-- Signed=0EP3coxVYPLN5UwZdPsDa0lQBQ3dMwFcvgzleQg -->
+<!-- Signed=0EP3coxVYPLPEFXfky-7NhYJET5NO3axSZa8GHQ -->
 <!-- Debug=0EP3coxVYPLPx5oF8rE_nmx4ZggvVjWpjCX-TKw -->
